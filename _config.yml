@@ -21,10 +21,12 @@
 title: jemmyblog
 email: jemmy9211@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  this is my first blog using githubpages and jekylly
+  作者: 陳冠軒
+   NCHU CSE
+   不定時更新
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: 
+twitter_username:
 github_username: jemmy9211
 
 # Build settings
