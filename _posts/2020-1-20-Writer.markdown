@@ -5,20 +5,20 @@ date:   1999-09-21 00:00:00 +0800
 permalink: /Writer/
 ---
 
-作者介紹:     
+###作者介紹:     
 
-Education:      
+Education:       
     NCHU CSE    
     TNFSH      
 
-Name:
+Name:     
     Jemmy Chen   
-
-Email:
+    
+Email:    
     jemmy9211@gmail.com   
 
-Language Skills:
+Language Skills:    
     English/Chineses
 
-Country:
+Country:    
     Taiwan   
