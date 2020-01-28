@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Markdown Syntax
-date:2020-1-28 23:00:00 +0800
+date: 2020-1-28 23:00:00 +0800
 permalink: /mdsyntax/
 ---
 
