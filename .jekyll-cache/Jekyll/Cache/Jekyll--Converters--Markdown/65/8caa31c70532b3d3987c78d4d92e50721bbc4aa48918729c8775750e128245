@@ -1,0 +1,71 @@
+I"<h2 id="在這裡簡易的紀錄markdown語法的使用方法">在這裡簡易的紀錄markdown語法的使用方法</h2>
+<h3 id="在md文件中可以套用html語法">在md文件中可以套用html語法</h3>
+
+<font color="green" size="4">font(color=green)</font>
+
+<table><tr><td bgcolor="orange">table(bgcolor=orange)
+</td></tr></table>
+
+<h3 id="一些基本markdown語法">一些基本markdown語法</h3>
+
+<ul class="task-list">
+  <li>
+    <p><code class="highlighter-rouge">*</code> <br />
+<em>testt</em></p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">_</code> <br />
+ <em>test</em></p>
+  </li>
+  <li><code class="highlighter-rouge"> #</code><code class="highlighter-rouge">syntax</code><code class="highlighter-rouge"># </code>
+    <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;stdio.h&gt;
+</span><span class="kt">int</span> <span class="nf">main</span><span class="p">(){</span>
+  <span class="k">return</span> <span class="mi">0</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>    </div>
+  </li>
+  <li><code class="highlighter-rouge">#</code>
+    <h5 id="標題">標題</h5>
+    <h4 id="標題-1">標題</h4>
+    <h3 id="標題-2">標題</h3>
+    <h2 id="標題-3">標題</h2>
+    <h1 id="標題-4">標題</h1>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">___</code> <br />
+<strong>__</strong><strong>__</strong><strong>__</strong>__</p>
+  </li>
+  <li>
+    <p><code class="highlighter-rouge">***</code><br />
+***</p>
+  </li>
+  <li><code class="highlighter-rouge">+-*</code></li>
+  <li>
+    <p>1 <br />
+<strong>__</strong><strong>__</strong><strong>__</strong>___</p>
+  </li>
+  <li><code class="highlighter-rouge">&gt;</code>
+    <blockquote>
+      <p>引用字句</p>
+    </blockquote>
+  </li>
+  <li><code class="highlighter-rouge">- [] </code></li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />代辦事項</li>
+  <li class="task-list-item">
+    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />add [x]</p>
+  </li>
+  <li class="task-list-item"><code class="highlighter-rouge">圖片用法 ![]()</code></li>
+</ul>
+
+<p><img src="/assets/portfolio.png" alt="photo" title="me" /></p>
+
+<h3 id="結論">結論</h3>
+<p>markdown真的很簡潔好用，看起來也很舒服XD，但我還不太熟悉，應該以後常常寫文章就熟悉了吧</p>
+
+<p>最後我想額外推薦一樣東西就是visual stdio code
+它真整合很多常用的功能還提供許多插件，我原本是使用atom但最近迷上了visual stdio code 除了我個人覺得穩定度比較高之外
+介面也比較簡潔好用，在上面可以支援我目前需要寫的所有code大推!!</p>
+
+<p><em>2020/1/28</em></p>
+
+:ET
