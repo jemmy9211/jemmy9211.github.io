@@ -6,19 +6,20 @@ permalink: /Writer/
 ---
 
 作者介紹:     
--------------
-Education:       
+================
+#### Education:       
     NCHU CSE    
     TNFSH      
-
-Name:     
+#### 
+#### Name:     
     Jemmy Chen   
-
-Email:   
+#### 
+#### Email:   
     jemmy9211@gmail.com   
-
-Language Skills:    
-    `English`/`Chineses`
-
-Country:    
-    `Taiwan`   
+#### 
+#### Language Skills:    
+    English/Chineses
+#### 
+#### Country:    
+    Taiwan  
+####    
