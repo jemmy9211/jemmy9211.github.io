@@ -4,7 +4,7 @@ Simplistic jekyll portfolio-style theme for writers.
 
 **Demo**: [thelehhman.com](https://thelehhman.com)
 
-![plainwhite theme preview](/screenshot.png)
+
 
 ## Installation on Github Pages
 
