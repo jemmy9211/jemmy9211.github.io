@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Markdown Syntax
+title: "Markdown語法小筆記"
 date: 2020-1-28 23:00:00 +0800
 permalink: /mdsyntax/
 categories: markdown visualstuiocode
@@ -23,13 +23,13 @@ categories: markdown visualstuiocode
 + `_`   
  _test_
 
-+ ` #```syntax ```# ` 
++ ` #```syntax ```# `
 ```c++
 #include<stdio.h>
 int main(){
     return 0;
 }
-``` 
+```
 
 + `#`
 ##### 標題
@@ -71,5 +71,3 @@ markdown真的很簡潔好用，看起來也很舒服XD，但我還不太熟悉�
 介面也比較簡潔好用，在上面可以支援我目前需要寫的所有code大推!!
 
 _2020/1/28_
-
-
