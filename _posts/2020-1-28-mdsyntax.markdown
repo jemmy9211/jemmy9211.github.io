@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: post
 title: "Markdown語法小筆記"
 date: 2020-1-28 23:00:00 +0800
 permalink: /mdsyntax/
@@ -11,7 +11,7 @@ categories: markdown visualstuiocode
 
 <font color=green size=4>font(color=green)</font>
 
-<table><tr><td bgcolor=orange>table(bgcolor=orange)
+ <table><tr><td bgcolor=orange>table(bgcolor=orange)
 </td></tr></table>
 
 ### 一些基本markdown語法
