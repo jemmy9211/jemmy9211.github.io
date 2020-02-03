@@ -1,6 +1,5 @@
-I"-<h2 id="在這裡簡易的紀錄markdown語法的使用方法">在這裡簡易的紀錄markdown語法的使用方法</h2>
+I"<h2 id="在這裡簡易的紀錄markdown語法的使用方法">在這裡簡易的紀錄markdown語法的使用方法</h2>
 <h3 id="在md文件中可以套用html語法">在md文件中可以套用html語法</h3>
-<p>像是</p>
 
 <font color="green" size="4">font(color=green)</font>
 
@@ -11,13 +10,12 @@
 
 <ul class="task-list">
   <li>
-    <p><code class="highlighter-rouge">~</code>       ~testt~</p>
+    <p><code class="highlighter-rouge">*</code> <br />
+<em>testt</em></p>
   </li>
   <li>
-    <p><code class="highlighter-rouge">*</code> <em>testt</em></p>
-  </li>
-  <li>
-    <p><code class="highlighter-rouge">_</code> <em>test</em></p>
+    <p><code class="highlighter-rouge">_</code> <br />
+ <em>test</em></p>
   </li>
   <li><code class="highlighter-rouge"> #</code><code class="highlighter-rouge">syntax</code><code class="highlighter-rouge"># </code>
     <div class="language-c++ highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cp">#include&lt;stdio.h&gt;
@@ -35,29 +33,28 @@
   </li>
   <li>
     <p><code class="highlighter-rouge">___</code> <br />
-<strong>__</strong><strong>__</strong></p>
+<strong>__</strong><strong>__</strong><strong>__</strong>__</p>
   </li>
   <li>
     <p><code class="highlighter-rouge">***</code><br />
 ***</p>
   </li>
   <li><code class="highlighter-rouge">+-*</code></li>
-  <li>1</li>
-  <li>2</li>
   <li>
-    <p>3 <br />
-___</p>
+    <p>1 <br />
+<strong>__</strong><strong>__</strong><strong>__</strong>___</p>
   </li>
   <li><code class="highlighter-rouge">&gt;</code>
     <blockquote>
       <p>引用字句</p>
     </blockquote>
   </li>
-  <li><code class="highlighter-rouge">- [] </code></li>
-  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />代辦事項</li>
-  <li class="task-list-item">
-    <p><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />add [x]</p>
+  <li>
+    <p><code class="highlighter-rouge">- [] </code></p>
   </li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" />代辦事項</li>
+  <li class="task-list-item"><input type="checkbox" class="task-list-item-checkbox" disabled="disabled" checked="checked" />add [x]  <br />
+<br /></li>
   <li class="task-list-item"><code class="highlighter-rouge">圖片用法 ![]()</code></li>
 </ul>
 
@@ -71,5 +68,4 @@ ___</p>
 介面也比較簡潔好用，在上面可以支援我目前需要寫的所有code大推!!</p>
 
 <p><em>2020/1/28</em></p>
-
 :ET
