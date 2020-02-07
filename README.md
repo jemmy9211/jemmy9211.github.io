@@ -2,7 +2,7 @@
 
 Simplistic jekyll portfolio-style theme for writers.
 
-**Demo**: [thelehhman.com](https://thelehhman.com)
+**Demo**: [jemmy9211](https://jemmy9211.github.io)
 
 
 
