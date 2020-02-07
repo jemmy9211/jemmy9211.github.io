@@ -5,14 +5,20 @@ description:
   This is a blog about my learning process in cs.
   This blog is also enhensing my writing skill.
   In total,All ABOUT JEMMY9211.
-show_excerpts: true
+show_excerpts: 
+  This is a blog about my learning process in cs.
+  This blog is also enhensing my writing skill.
+  In total,All ABOUT JEMMY9211.
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
   sass_dir: _sass
 plainwhite:
   name: Jemmy Chen
-  tagline: NCHU CSE.Deramer.
+  tagline: 
+    NCHU CSE.
+
+    Deramer.
   date_format: "%b %-d, %Y"
   sitemap: true # set to true to generate sitemap.xml content
   disqus_shortname: games
