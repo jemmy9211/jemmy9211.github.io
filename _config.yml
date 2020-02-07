@@ -3,10 +3,9 @@ author: jemmY
 email: jemmy9211@gmail.com
 description:
   This is a blog about my learning process in cs.
-This blog is also enhensing my writing skill.
-In total,All ABOUT JEMMY9211.
-show_excerpts:
-true
+  This blog is also enhensing my writing skill.
+  In total,All ABOUT JEMMY9211.
+show_excerpts: true
 # Minima date format
 # refer to http://shopify.github.io/liquid/filters/date/ if you want to customize this
 sass:
@@ -30,13 +29,13 @@ plainwhite:
   analytics_id: "jemmy9211@gmail.com"
   social_links:
     # twitter:
-    github:  jemmy9211
+    github: jemmy9211
     #linkedIn: in/
-    rss: rss
+    #rss: rss
     # dribbble: jekyll
     # facebook: jekyll
     # flickr:   jekyll
-     instagram: jemmy9211
+    instagram: jemmy_921
     # linkedin: jekyll
     # pinterest: jekyll
     # youtube: jekyll
