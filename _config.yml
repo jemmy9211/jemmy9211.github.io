@@ -28,7 +28,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   jekyll優化我的網頁，現階段我把創作這個網頁當成興趣，可以讓我空虛的生活看似充實一點，  
   也當成在苦悶的學業壓力下的出口，這個blog目前主要是紀錄一些我學習的資料和生活的大小事，我想只有真正  
   有興趣的人會瀏覽這個網頁吧。_
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "/blog" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 
 

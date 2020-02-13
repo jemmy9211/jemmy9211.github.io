@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.6">Jekyll</generator><link href="http://localhost:4000/blog/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/blog/" rel="alternate" type="text/html" /><updated>2020-02-13T21:29:10+08:00</updated><id>http://localhost:4000/blog/feed.xml</id><title type="html">jemmycslearn</title><subtitle>這是一個blog，一開始會想建立這個blog ，單純是想運用githubpages建立一個網頁可以隨意地寫一些自己真   正有興趣的東西  從一開始的基本html網頁，到現在運用jekyll生成的靜態網頁，在這個過程中順便大約的了解了git版控的概念   雖然文章還沒有幾篇，因為最近比較忙…….，等我有空時我會加緊腳步增加文章量的哈哈，也會盡量學習用   jekyll優化我的網頁，現階段我把創作這個網頁當成興趣，可以讓我空虛的生活看似充實一點，   也當成在苦悶的學業壓力下的出口，這個blog目前主要是紀錄一些我學習的資料和生活的大小事，我想只有真正   有興趣的人會瀏覽這個網頁吧。_</subtitle><entry><title type="html">Welcome to Jekyll!</title><link href="http://localhost:4000/blog/jekyll/update/2020/02/13/welcome-to-jekyll.html" rel="alternate" type="text/html" title="Welcome to Jekyll!" /><published>2020-02-13T17:15:11+08:00</published><updated>2020-02-13T17:15:11+08:00</updated><id>http://localhost:4000/blog/jekyll/update/2020/02/13/welcome-to-jekyll</id><content type="html" xml:base="http://localhost:4000/blog/jekyll/update/2020/02/13/welcome-to-jekyll.html">&lt;p&gt;You’ll find this post in your &lt;code class=&quot;highlighter-rouge&quot;&gt;_posts&lt;/code&gt; directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run &lt;code class=&quot;highlighter-rouge&quot;&gt;jekyll serve&lt;/code&gt;, which launches a web server and auto-regenerates your site when a file is updated.中文字體&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Jekyll requires blog post files to be named according to the following format:&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR-MONTH-DAY-title.MARKUP&lt;/code&gt;&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Where &lt;code class=&quot;highlighter-rouge&quot;&gt;YEAR&lt;/code&gt; is a four-digit number, &lt;code class=&quot;highlighter-rouge&quot;&gt;MONTH&lt;/code&gt; and &lt;code class=&quot;highlighter-rouge&quot;&gt;DAY&lt;/code&gt; are both two-digit numbers, and &lt;code class=&quot;highlighter-rouge&quot;&gt;MARKUP&lt;/code&gt; is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;em&gt;Jekyll also offers powerful support for code snippets:&lt;/em&gt;&lt;/p&gt;
+
+&lt;figure class=&quot;highlight&quot;&gt;&lt;pre&gt;&lt;code class=&quot;language-ruby&quot; data-lang=&quot;ruby&quot;&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+  &lt;span class=&quot;nb&quot;&gt;puts&lt;/span&gt; &lt;span class=&quot;s2&quot;&gt;&quot;Hi, &lt;/span&gt;&lt;span class=&quot;si&quot;&gt;#{&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s2&quot;&gt;&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;end&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;print_hi&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Tom'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;#=&amp;gt; prints 'Hi, Tom' to STDOUT.&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;Check out the &lt;a href=&quot;https://jekyllrb.com/docs/home&quot;&gt;Jekyll docs&lt;/a&gt; for more info on how to get the most out of Jekyll. File all bugs/feature requests at &lt;a href=&quot;https://github.com/jekyll/jekyll&quot;&gt;Jekyll’s GitHub repo&lt;/a&gt;. If you have questions, you can ask them on &lt;a href=&quot;https://talk.jekyllrb.com/&quot;&gt;Jekyll Talk&lt;/a&gt;.&lt;/p&gt;</content><author><name></name></author><category term="test" /><summary type="html">You’ll find this post in your _posts directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run jekyll serve, which launches a web server and auto-regenerates your site when a file is updated.中文字體</summary></entry><entry><title type="html">Markdown語法小筆記</title><link href="http://localhost:4000/blog/mdsyntax/" rel="alternate" type="text/html" title="Markdown語法小筆記" /><published>2020-01-28T23:00:00+08:00</published><updated>2020-01-28T23:00:00+08:00</updated><id>http://localhost:4000/blog/mdsyntax</id><content type="html" xml:base="http://localhost:4000/blog/mdsyntax/">&lt;h2 id=&quot;在這裡簡易的紀錄markdown語法的使用方法&quot;&gt;在這裡簡易的紀錄markdown語法的使用方法&lt;/h2&gt;
+&lt;h3 id=&quot;在md文件中可以套用html語法&quot;&gt;在md文件中可以套用html語法&lt;/h3&gt;
+
+&lt;p&gt;&amp;lt;font color=green size=4&amp;gt;font(color=green)&amp;lt;/font&amp;gt;&lt;/p&gt;
+&lt;table&gt; &lt;tr&gt;&amp;lt;td bgcolor=orange&amp;gt;table(bgcolor=orange)
+&amp;lt;/td&amp;gt;&lt;/tr&gt;&lt;/table&gt;
+
+&lt;h3 id=&quot;一些基本markdown語法&quot;&gt;一些基本markdown語法&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;*&lt;/code&gt; &lt;br /&gt;
+&lt;em&gt;testt&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;_&lt;/code&gt; &lt;br /&gt;
+ &lt;em&gt;test&lt;/em&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt; #&lt;/code&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;syntax&lt;/code&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;# &lt;/code&gt;
+    &lt;div class=&quot;language-c++ highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;cp&quot;&gt;#include&amp;lt;stdio.h&amp;gt;
+&lt;/span&gt;&lt;span class=&quot;kt&quot;&gt;int&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;main&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(){&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;#&lt;/code&gt;
+    &lt;h5 id=&quot;標題&quot;&gt;標題&lt;/h5&gt;
+    &lt;h4 id=&quot;標題-1&quot;&gt;標題&lt;/h4&gt;
+    &lt;h3 id=&quot;標題-2&quot;&gt;標題&lt;/h3&gt;
+    &lt;h2 id=&quot;標題-3&quot;&gt;標題&lt;/h2&gt;
+    &lt;h1 id=&quot;標題-4&quot;&gt;標題&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;___&lt;/code&gt; &lt;br /&gt;
+___&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;***&lt;/code&gt;&lt;br /&gt;
+***&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;+-*&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;
+    &lt;h2 id=&quot;1&quot;&gt;1&lt;/h2&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;引用字句&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul class=&quot;task-list&quot;&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;- [] &lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; /&gt;代辦事項&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;input type=&quot;checkbox&quot; class=&quot;task-list-item-checkbox&quot; disabled=&quot;disabled&quot; checked=&quot;checked&quot; /&gt;add [x]  &lt;br /&gt;
+&lt;br /&gt;&lt;/li&gt;
+  &lt;li class=&quot;task-list-item&quot;&gt;&lt;code class=&quot;highlighter-rouge&quot;&gt;圖片用法 ![]()&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/portfolio.png&quot; alt=&quot;photo&quot; title=&quot;me&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;結論&quot;&gt;結論&lt;/h3&gt;
+&lt;p&gt;markdown真的很簡潔好用，看起來也很舒服XD，但我還不太熟悉，應該以後常常寫文章就熟悉了吧&lt;/p&gt;
+
+&lt;p&gt;最後我想額外推薦一樣東西就是visual stdio code
+它真整合很多常用的功能還提供許多插件，我原本是使用atom但最近迷上了visual stdio code 除了我個人覺得穩定度比較高之外
+介面也比較簡潔好用，在上面可以支援我目前需要寫的所有code大推!!&lt;/p&gt;
+
+&lt;p&gt;&lt;em&gt;2020/1/28&lt;/em&gt;&lt;/p&gt;</content><author><name></name></author><summary type="html">在這裡簡易的紀錄markdown語法的使用方法 在md文件中可以套用html語法</summary></entry></feed>
