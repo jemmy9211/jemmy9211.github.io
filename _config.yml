@@ -1,0 +1,81 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you: 
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: jemmycslearn
+email: jemmy9211@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  這是一個blog，一開始會想建立這個blog ，單純是想運用githubpages建立一個網頁可以隨意地寫一些自己真  
+  正有興趣的東西 
+  從一開始的基本html網頁，到現在運用jekyll生成的靜態網頁，在這個過程中順便大約的了解了git版控的概念  
+  雖然文章還沒有幾篇，因為最近比較忙…….，等我有空時我會加緊腳步增加文章量的哈哈，也會盡量學習用  
+  jekyll優化我的網頁，現階段我把創作這個網頁當成興趣，可以讓我空虛的生活看似充實一點，  
+  也當成在苦悶的學業壓力下的出口，這個blog目前主要是紀錄一些我學習的資料和生活的大小事，我想只有真正  
+  有興趣的人會瀏覽這個網頁吧。_
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+
+
+paginate: 5
+paginate_path: "/blog/page:num/"
+# Build settings
+theme: jekyll-dash
+
+# jekyll-tagging (optional)
+tag_permalink_style: pretty
+tag_page_layout: tag_page
+tag_page_dir: tag
+
+dash:
+  date_format: "%b %-d, %Y"
+
+  disqus:
+    shortname: games
+
+  # generate social links in footer
+  # supported colors: green, red, orange, blue, cyan, pink, teal, yellow, indigo, purple
+  social_links:
+    - url: https://github.com/jemmy9211
+      icon: github-square
+      color: purple
+
+plugins:
+  - jekyll-feed
+  - jekyll/tagging
+  - jekyll-paginate
+  - liquid-md5
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+# exclude:
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
