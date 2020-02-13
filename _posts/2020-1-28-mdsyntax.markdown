@@ -10,8 +10,7 @@ categories: markdown visualstuiocode
 ### 在md文件中可以套用html語法
 
 <font color=green size=4>font(color=green)</font>
-
- <table><tr><td bgcolor=orange>table(bgcolor=orange)
+<table> <tr><td bgcolor=orange>table(bgcolor=orange)
 </td></tr></table>
 
 ### 一些基本markdown語法
@@ -39,7 +38,7 @@ int main(){
 # 標題
 
 + `___`   
-____________________
+___
 
 
 + `***`  
@@ -47,11 +46,12 @@ ____________________
 
 + `+-*`
 + 1   
-_____________________
+---
 
 
-+ `>`
->引用字句
++ `>`  
+
+> 引用字句
 
 
 + `- [] `
@@ -61,7 +61,7 @@ _____________________
 <br>
 + `圖片用法 ![]()`
 
-![photo](/assets/portfolio.png "me")
+![photo](/portfolio.png "me")
 
 ### 結論
 markdown真的很簡潔好用，看起來也很舒服XD，但我還不太熟悉，應該以後常常寫文章就熟悉了吧
