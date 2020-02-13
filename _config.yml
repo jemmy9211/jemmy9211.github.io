@@ -21,7 +21,7 @@
 title: jemmycslearn
 email: jemmy9211@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  _這是一個blog，一開始會想建立這個blog ，單純是想運用githubpages建立一個網頁可以隨意地寫一些自己真  
+  這是一個blog，一開始會想建立這個blog ，單純是想運用githubpages建立一個網頁可以隨意地寫一些自己真  
   正有興趣的東西 
   從一開始的基本html網頁，到現在運用jekyll生成的靜態網頁，在這個過程中順便大約的了解了git版控的概念  
   雖然文章還沒有幾篇，因為最近比較忙…….，等我有空時我會加緊腳步增加文章量的哈哈，也會盡量學習用  
