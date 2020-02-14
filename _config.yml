@@ -19,15 +19,15 @@ title_separator          : "-"
 subtitle                 : "Version 2.0" # site tagline that appears below site title in masthead
 name                     : "Jemmy Chen"
 description              : "An website about my work & life"
-url                      : "https://jemmy9211.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
-baseurl                  : "/blog" # the subpath of your site, e.g. "/blog"
+url                      : "" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : # path of logo image to display in the masthead, e.g. "/assets/images/88x88.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
-comments: 
+comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
     shortname            : "games"
@@ -75,7 +75,7 @@ twitter:
   username               :
 facebook:
   username               : "陳冠軒"
-  app_id                 : 
+  app_id                 :
   publisher              : "facebook"
 og_image                 : # Open Graph/Twitter default site image
 # For specifying social profiles
@@ -244,7 +244,7 @@ whitelist:
 category_archive:
   type: liquid
   path: /categories/
-tag_archive: 
+tag_archive:
   type: liquid
   path: /tags/
 # https://github.com/jekyll/jekyll-archives
