@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Writer
-date:   1999-09-21 00:00:00 +0800
+date:  1999-09-21 00:00:00 +0800
 permalink: /Writer/
 ---
 
