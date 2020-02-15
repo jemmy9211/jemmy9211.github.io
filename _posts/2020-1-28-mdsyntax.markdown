@@ -1,7 +1,12 @@
 ---
-layout: posts
+layout: single
 title: "Markdown語法小筆記"
-date: 2020-1-28 23:00:00 +0800
+date:  2020-1-28 23:00:00 +0800
+categories: 
+  - blog
+tags:
+  - Post Formats
+  - notice
 ---
 
 > 在這裡簡易的紀錄markdown語法的使用方法  
@@ -9,19 +14,19 @@ date: 2020-1-28 23:00:00 +0800
 <font color=green size=4>font(color=green)</font>  
 <table><tr><td bgcolor=orange>table(bgcolor=orange)</td></tr></table>  
 
-2. 
+2.
 ```
 *
 ```   
 *testt*
 
-3. 
+3.
 ```
 _
 ```   
  _test_
 
-4. 
+4.
 ```c++
 #include<stdio.h>
 int main(){
@@ -29,7 +34,7 @@ int main(){
 }
 ```
 
-5. 
+5.
 ```
 #
 ```
@@ -39,14 +44,14 @@ int main(){
 ## 標題
 # 標題
 
-6. 
+6.
 ```
 ___
 ```   
 ___
 
 
-7. 
+7.
 ``` md
 ***
 ```  
@@ -54,28 +59,28 @@ ___
 
 8. `+-*`
 
-9. 
-``` 
+9.
+```
 1
 ```   
 ___
 
 
-10. 
+10.
 ```
 >
 ```
 > 引用字句
 
 
-11. 
+11.
 ```
 - []
 ```
 [ ] 代辦事項  
 [x] add [x]   
 
-12. 
+12.
 ```
 圖片用法 ![]()
 ```

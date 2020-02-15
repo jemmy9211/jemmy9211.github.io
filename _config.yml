@@ -99,11 +99,11 @@ author:
   avatar           :  "/assets/portfolio.png"
   bio              : "紀錄一些學習的過程"
   location         : "Taiwan"
-  email            : "jemmy9211@gmail.com"
+  email            : ""
   links:
-    - label: "Email"
-      icon: "fas fa-fw fa-envelope-square"
-      url: " jemmy9211@gmail.com"
+    #- label: "Email"
+     # icon: "fas fa-fw fa-envelope-square"
+      # url: " jemmy9211@gmail.com"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://jemmy9211.github.io"
@@ -250,8 +250,8 @@ tag_archive:
 # https://github.com/jekyll/jekyll-archives
 jekyll-archives:
    enabled:
-     - categories
-     - tags
+    - categories
+    - tags
    layouts:
      category: archive-taxonomy
      tag: archive-taxonomy
@@ -275,7 +275,7 @@ defaults:
       path: ""
       type: posts
     values:
-      layout: single
+      layout: posts
       author_profile: true
       read_time: true
       comments: true
