@@ -30,7 +30,7 @@ words_per_minute         : 200
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "custom"
   disqus:
-    shortname            : "disqus_PW807HPZwC"
+    shortname            : "jEmmY"
 staticman:
   allowedFields          : # ['name', 'email', 'url', 'message']
   branch                 : # "master"

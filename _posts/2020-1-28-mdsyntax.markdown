@@ -2,11 +2,12 @@
 layout: single
 title: "Markdown語法小筆記"
 date:  2020-1-28 23:00:00 +0800
+permalink: /mdsyntax/
 categories: 
-  - blog
+  - markdown
 tags:
-  - Post Formats
-  - notice
+  - markdown
+  - web
 ---
 
 > 在這裡簡易的紀錄markdown語法的使用方法  
