@@ -11,7 +11,8 @@ tags:
 ---
 
 > 在這裡簡易的紀錄markdown語法的使用方法  
-> ( hint!) 在md文件中可以套用html語法
+> ( hint!) 在md文件中可以套用html語法  
+
 <font color=green size=4>font(color=green)</font>  
 <table><tr><td bgcolor=orange>table(bgcolor=orange)</td></tr></table>  
 

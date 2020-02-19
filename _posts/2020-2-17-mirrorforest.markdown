@@ -2,12 +2,12 @@
 layout: single
 title: "鏡子森林-侯方平"
 date:  2020-2-17 00:00:00 +0800
-permalink: /videocomment/
+permalink: /mirrorforest/
 categories: 
-  - 心得
+  - "心得"
 tags:
-  - 人物
-  - 鏡子森林
+  - "人物"
+  - "鏡子森林"
 ---
 
 最近一直追的一部劇，也只有追這部，劇裡面描述的世界很真實，沒有夢幻情侶檔，沒有戲劇化結局，只有最真實又吸引人的人物和世界。  
