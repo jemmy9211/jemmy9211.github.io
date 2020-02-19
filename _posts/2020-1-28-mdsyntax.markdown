@@ -11,24 +11,22 @@ tags:
 ---
 
 > 在這裡簡易的紀錄markdown語法的使用方法  
-> ( hint!) 在md文件中可以套用html語法  
 
-<font color=green size=4>font(color=green)</font>  
-<table><tr><td bgcolor=orange>table(bgcolor=orange)</td></tr></table>  
+1. **在md文件中可以套用html語法**  
 
-2.
+2. 
 ```
-*
+**
 ```   
-*testt*
+**test**
 
-3.
+3. 
 ```
 _
 ```   
  _test_
 
-4.
+4. 
 ```c++
 #include<stdio.h>
 int main(){
@@ -36,7 +34,7 @@ int main(){
 }
 ```
 
-5.
+5. 
 ```
 #
 ```
@@ -46,14 +44,14 @@ int main(){
 ## 標題
 # 標題
 
-6.
+6. 
 ```
 ___
 ```   
 ___
 
 
-7.
+7. 
 ``` md
 ***
 ```  
@@ -61,28 +59,28 @@ ___
 
 8. `+-*`
 
-9.
+9. 
 ```
 1
 ```   
 ___
 
 
-10.
+10. 
 ```
 >
 ```
 > 引用字句
 
 
-11.
+11. 
 ```
 - []
 ```
 [ ] 代辦事項  
 [x] add [x]   
 
-12.
+12. 
 ```
 圖片用法 ![]()
 ```

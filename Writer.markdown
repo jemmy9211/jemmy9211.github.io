@@ -7,7 +7,7 @@ permalink: /Writer/
 
 ---
 
-作者介紹:     
+**作者介紹:**     
 -----------
 #### Education: 
 ```      
