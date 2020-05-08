@@ -15,8 +15,8 @@ minimal_mistakes_skin    : "air" #"default" "air", "aqua", "contrast", "dark", "
 # Site Settings
 locale                   : "zh-TW"
 title                    : "Jemmyの部落格"
-title_separator          : ""
-subtitle                 : "yeahyeah" # site tagline that appears below site title in masthead
+title_separator          : "//"
+subtitle                 : "about science" # site tagline that appears below site title in masthead
 name                     : "JemmyChen"
 description              : "An website about my work & life"
 url                      : "https://jemmy9211.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
