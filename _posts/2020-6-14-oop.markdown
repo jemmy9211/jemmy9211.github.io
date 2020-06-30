@@ -28,7 +28,7 @@ class testclass{               //class
 };
 ```   
 ## Constructors  
-Constructors是一個特別的methods，它會自動被呼叫當當它屬於的物件被建立時 
+Constructors是一個特別的methods，它會自動被呼叫，當它屬於的物件被建立的時候 
 值得注意的是他的寫法，它的名稱應該要他所屬於的類別一模一樣。   
 ``` c++
 class constructortest{
@@ -45,11 +45,14 @@ int main(){
    
 ## Access Specifiers(訪問修飾符)
 在C++裡，有3個access specifiers  
-_public_- members are accessible from outside the class  
-_private_- members cannot be accessed (or viewed) from outside the class  
+_public_- members are accessible from outside the class    
+
+_private_- members cannot be accessed (or viewed) from outside the class   
+     
 _protected_-members cannot be accessed from outside the class, however, they can be accessed in inherited classes   
    
-**Note:** 如果沒又特別標示，預設式private  
+**Note:** 如果沒又特別標示，預設是被設為private   
+  
 下面這code完美示範了private和public的用法(encapsulation的範例)
 ```c++
 class Employee{
@@ -76,6 +79,42 @@ int main() {
 }
 ```
 ## Inheritance //先讀期末了繼承下回見
+在c++裡面，可以在一個新的class繼承另一個既有的class的attributes and method，大致可以分為下面的兩個概念
+* derived class
+* base class   
+
+derived class inherits base class的屬性和method，以下直接以範例說明  
+``` c++
+class A{
+  public: 
+    string a="this is a from class A";
+    void print(){
+      cout << "method from class A" << endl;
+    }
+}
+
+class BfromA: public A{
+  public:
+    string b="this is b from class B";
+}
+
+int main(){
+  B test;
+  test.print();
+  cout << B.a << B.b;
+
+}
+```
+除此之外，還有multiple inheritance的功能，就是一個class可以同時繼承多個class。  
+
+
+
+
+
+
+
+> 我想做的事，沒有人可以理解，於是我要扛住。
+
 
 _2020/6/4_
 
