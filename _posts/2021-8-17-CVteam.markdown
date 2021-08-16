@@ -1,1 +1,14 @@
+# 2021-8-17-CVteam
+---
+layout: single
+title: "cae cv team"
+date:  2021-8-17 00:00:00 +0800
+permalink: /CVteam/
+categories: 
+  - AI
+tags:
+  - python
+---
 
+
+### 工作簡介
