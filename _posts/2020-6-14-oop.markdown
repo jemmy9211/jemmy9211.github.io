@@ -107,6 +107,9 @@ int main(){
 ```
 除此之外，還有multiple inheritance的功能，就是一個class可以同時繼承多個class。  
 
+過了一年後我學了java，這是hack md test!  
+
+
 
 
 
