@@ -11,7 +11,7 @@ tags:
 # 資料保存
 ![](/assets/gfa1.jpg)
 
-![](/assets/gfa1.jpg)
+![](/assets/gfa2.jpg)
 
 
 
