@@ -1,0 +1,32 @@
+---
+layout: single
+title: "Yolov4簡易安裝教學"
+date:  2021-12-18 00:00:00 +0800
+permalink: /yolov4install/
+categories: 
+  - "tutorial"
+tags:
+  - "yolov4"
+  - "Stock"
+---
+**前言**  
+這篇文章主要敘述如何在自己PC上建置yolov4的環境和使用yolov4訓練即辨識物件。  
+Yolov4訓練預先設定  
+完成上述安裝並且生出darknet.exe之後就能開始訓練我們的資料  
+要讓yolov4成功開始訓練需要六個檔案  
+1.	obj.data  
+2.	obj.names  
+3.	train.txt  
+4.	valid.txt  
+5.	yolov4tiny.cfg  
+6.	yolov4tiny.conv.29  
+obj.data是讓yolov4認得你訓練資料結構的檔案，具體寫法會像這樣
+![](/assets/)
+可以看到它包括class的數量，以及train.txt/valid.txt/obj.names的位置
+Backup是yolov4訓練完後權重儲存的資料夾。
+
+
+
+
+
+
