@@ -11,16 +11,19 @@ tags:
 ---
 **前言**  
 這篇文章主要敘述如何在自己PC上建置yolov4的環境和使用yolov4訓練即辨識物件  
-----     
+---  
 **Yolov4訓練預先設定**  
 完成上述安裝並且生出darknet.exe之後就能開始訓練我們的資料  
 要讓yolov4成功開始訓練需要六個檔案  
+``` 
 1. obj.data  
 2. obj.names  
 3. train.txt  
 4. valid.txt  
 5. yolov4tiny.cfg  
 6. yolov4tiny.conv.29  
+```   
+
 + obj.data是讓yolov4認得你訓練資料結構的檔案，具體寫法會像這樣
 ![](/assets/y1.jpg)
 可以看到它包括class的數量，以及train.txt/valid.txt/obj.names的位置
@@ -45,7 +48,8 @@ C:\Users\jEmmY\darknet\build\darknet\x64\
 
 值得注意的是yolov4tiny.conv.29是預先訓練的權重，當我們進行第一次訓練時會用到它  
 ![](/assets/y6.png)  
-------   
+--- 
+
 **Yolov4 訓練**
 辛苦的準備完上面的環境+檔案後，就可以開始訓練我們的模型了!  
 首先先打開cmd進入你存放darknet.exe的地方  
