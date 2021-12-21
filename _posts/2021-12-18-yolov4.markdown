@@ -11,7 +11,8 @@ tags:
 ---
 ## 前言   
 這篇文章主要敘述如何在自己PC上建置yolov4的環境和使用yolov4訓練即辨識物件  
--------------------------------------------------------
+    
+
 ## Yolov4訓練預先設定    
 完成上述安裝並且生出darknet.exe之後就能開始訓練我們的資料  
 要讓yolov4成功開始訓練需要六個檔案  
@@ -36,13 +37,15 @@ tags:
 + Train.txt/valid.txt放的分別是訓練資料的jpg檔和手動標註過後的txt檔案  
 ![](/assets/y3.jpg)   
 + 最後是yolov4tiny.cfg    
-它是訓練用的設定檔，我們需要調整裡面的一些參數才能成功訓練，參數的調整主要可以是調整filters和classes，根據文件裡提供的規則
+它是訓練用的設定檔，我們需要調整裡面的一些參數才能成功訓練，參數的調整主要可以是調整filters和classes，根據文件裡提供的規則　　
+　　
 > Filters=(classes+5)*3    
 例如:如果classes=2，則filters=(2+5)*3   
-調整的參數(filters)位置會在yolov4tiny.cfg檔案裏面的[convolutional]，切記只需要改變每個[yolo] layer之前的[convolutional] layer裡的filters，如下圖所示   
+調整的參數(filters)位置會在yolov4tiny.cfg檔案裏面的[convolutional]，切記只需要改變每個[yolo] layer之前的[convolutional] > > layer裡的filters，如下圖所示   
 ![](/assets/y5.jpg)  
 並且在每個[yolo] layer裡面的classes參數也要調整成你這次訓練所分類的classes  
 例如:classes=2。  
+
 調整完所有檔案後將這六個檔案放在darknet所在的目錄下
 C:\Users\jEmmY\darknet\build\darknet\x64\
 目錄底下的檔案大致上會跟下圖很像，我把那六個重要的檔案和訓練所需要的資料都放在matrain資料夾裡，matrain所在的位置需要和darknet.exe在同一個目錄下  
