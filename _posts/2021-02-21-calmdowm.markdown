@@ -1,0 +1,20 @@
+---
+layout: single
+title: "[Tips]從hackmd直接push到github page"
+date:  2022-4-3 00:00:00 +0800
+permalink: /md/
+categories: 
+  - "easy"
+tags:
+  - "git"
+---
++ 這篇文章我直接使用hackmd push到我的github page上  
++ 目前沒遇到困難點    
+___  
+
+#### 自從我使用github page搭配jekyll生成靜待網頁後，一直都是開編輯器直接寫markdown，但這樣做非常麻煩也沒是一個舒服的書寫環境。
+
+####  我最近無意中發現偉大的hackmd竟然提供將md文件push上去github repo的機制，我就隨便的push上去我的github page r上市是上試試，竟然成功的將hackmd和我的網頁串起來了，因此往後的日子，除非要改網頁設定，不然就直接使用寫起來舒服的hackmd就能po文章啦。
+
+
+
