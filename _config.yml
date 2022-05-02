@@ -119,6 +119,9 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/jemmy_921"
+    - label: "My Graph"
+      icon: "fas fa-fw fa-link"
+      url: "https://jemmy9211.github.io/anygraph/"
 
 # Site Footer
 footer:
