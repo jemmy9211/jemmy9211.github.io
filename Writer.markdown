@@ -10,13 +10,14 @@ permalink: /Writer/
 **作者介紹:**     
 -----------
 #### Education: 
-```      
+```     
+    NYCU AI
     NCHU CSE    
     TNFSH
 ```      
 #### Name:
 ```     
-    Jemmy Chen
+    Guan-Xuan Chen
 ```      
 #### Email:
 ```   
