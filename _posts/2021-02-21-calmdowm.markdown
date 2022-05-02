@@ -2,7 +2,7 @@
 layout: single
 title: "[Tips]從hackmd直接push到github page"
 date:  2022-4-3 00:00:00 +0800
-permalink: /md/
+permalink: /hackmd/
 categories: 
   - "easy"
 tags:
