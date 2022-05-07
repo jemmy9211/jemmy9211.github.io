@@ -8,13 +8,19 @@ categories:
 tags:
   - "git"
 ---
-+ 這篇文章我直接使用hackmd push到我的github page上  
-+ 目前沒遇到困難點    
-___  
+**自從我使用github page搭配jekyll生成靜待網頁後，一直都是開編輯器直接寫markdown，但這樣做非常麻煩也沒是一個舒服的書寫環境。我最近無意中發現偉大的hackmd竟然提供將md文件push上去github repo的機制，我就隨便的push上去我的github page r上市是上試試，竟然成功的將hackmd和我的網頁串起來了，因此往後的日子，除非要改網頁設定，不然就直接使用寫起來舒服的hackmd就能po文章啦。**
+  
+#### 使用hackmd將文章上傳到github page的work flow    
+1. 擁有一個在github page上的靜態網頁  
+2. 擁有一個hackmd帳號
+3. 在靜態網頁專案資料夾下建立md檔案
+4. 在hackmd pull下來，並且書寫文章
+5. 文章編輯完成後commit and push到github上
+6. 你的靜態網頁生成器會自動把md file轉成web!
+![](https://i.imgur.com/3XnKz6h.png)
 
-#### 自從我使用github page搭配jekyll生成靜待網頁後，一直都是開編輯器直接寫markdown，但這樣做非常麻煩也沒是一個舒服的書寫環境。
 
-####  我最近無意中發現偉大的hackmd竟然提供將md文件push上去github repo的機制，我就隨便的push上去我的github page r上市是上試試，竟然成功的將hackmd和我的網頁串起來了，因此往後的日子，除非要改網頁設定，不然就直接使用寫起來舒服的hackmd就能po文章啦。
+
 
 
 
