@@ -15,7 +15,8 @@ tags:
 >看到的參數argv、argc 
 
 先看一個基本的C++ program  
-``` C++
+
+``` C
 #include<iostream>
 using namespace std;
 int main(int argc,char **argv){
