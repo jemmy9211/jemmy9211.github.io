@@ -16,7 +16,7 @@ tags:
 
 先看一個基本的C++ program  
 
-``` C
+``` c++
 #include<iostream>
 using namespace std;
 int main(int argc,char **argv){
