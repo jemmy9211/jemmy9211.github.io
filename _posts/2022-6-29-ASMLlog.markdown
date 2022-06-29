@@ -1,13 +1,13 @@
 ---
 layout: single
 title: "ASML 實習 實習筆記及心得"
-date:  2022-6-29 23:00:00 +0800
-permalink: /ASMLintern/
+date:  2022-6-29 00:00:00 +0800
+permalink: /asmlintern/
 categories: 
-  - markdown
+  - intern
 tags:
   - markdown
-  - web
+  - ASML
 ---
 # ASML SQA intern 學習歷程
 
