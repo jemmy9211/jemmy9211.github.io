@@ -10,7 +10,7 @@ tags:
   - algorithm
   - data structure
 ---
-####資料結構的操作  
+#### 資料結構的操作  
 
 |Data Structure|Insert|Delete|Search|
 |:----         |:----:|:----:|:----:|
@@ -18,7 +18,7 @@ tags:
 |Link list     |O(1)  |O(1)  |O(n)  |
 |Heap(min、max)|O(logn)|O(logn)|O(n)  |
 
-####排序  
+#### 排序  
 
 |Sort Type     |Avg     |Best    |Worst |
 |:----         |:----:  |:----:  |:----:|
@@ -32,7 +32,7 @@ tags:
 |Counting      |O(n+k)     |||
 **注**:k是值域、d是位數、r是進位制   
 
-####高等樹操作關鍵字複習  
+#### 高等樹操作關鍵字複習  
 
 |Advanced Tree |簡述  |
 |:----         |:----:|
