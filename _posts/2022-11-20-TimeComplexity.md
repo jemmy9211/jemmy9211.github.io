@@ -16,7 +16,7 @@ tags:
 |:----         |:----:|:----:|:----:|
 |Array         |O(n)  |O(n)  |O(n)  |
 |Link list     |O(1)  |O(1)  |O(n)  |
-|Heap(min、max)|O(1)  |O(1)  |O(n)  |
+|Heap(min、max)|O(logn)|O(logn)|O(n)  |
 
 ####排序  
 
