@@ -44,5 +44,5 @@ tags:
 |Btree         |2<=root degree<=m ceiling(m/2)<=中間node<=m|
 |Red Black tree|Root到leaf有相同的黑node|
 |Leftist Heap  |Liftist tree and min heap|
-|Binomial Heap ||
-|Fibonacci Heap||
+|Binomial Heap |Bk的總數=C(K,0)+C(K,1)+...+C(K,K)|
+|Fibonacci Heap|Binomial Heap的延伸 多了些功能像decrease key|
