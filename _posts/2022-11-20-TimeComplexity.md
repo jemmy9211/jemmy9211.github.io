@@ -28,8 +28,8 @@ tags:
 |Merge         |O(nlogn)|O(nlogn)|O(nlogn)|
 |Quick         |O(nlogn)|O(nlogn)|O(n^2)|
 |Heap          |O(nlogn)|O(nlogn)|O(nlogn)|
-|Radix         |O(d*(n+r)) |
-|Counting      |O(n+k)     | 
+|Radix         |O(d*(n+r)) |||
+|Counting      |O(n+k)     |||
 **注**:k是值域、d是位數、r是進位制   
 
 ####高等樹操作關鍵字複習  
