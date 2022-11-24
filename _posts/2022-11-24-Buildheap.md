@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "以buttom-up方式建立Heap 可以在O(n時間內完成)"
+title: "以buttom-up方式建立Heap 在O(n)時間內完成"
 date:  2022-11-24 00:00:00 +0800
 permalink: /buildheap/
 categories: 
