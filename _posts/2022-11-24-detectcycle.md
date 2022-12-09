@@ -13,7 +13,7 @@ tags:
 那這個問題的核心想法就是如果一個圖有V個點，此圖如果有>V-1個邊的話，就一定  
 會有cycle的產生，這是可以第一步最直覺的判斷方法，後者就是利用DFS了，在DFS  
 中如果有back edge那就會有cycle的產生，這是一個定理，詳細的推倒證明可以去參考 圖論，以下我就利用DFS的技巧去寫一個detect cycle的程式，在實作DFS中，會利用到
-stack的資援。  
+stack的支援。  
 ``` c++
 
 #include<bits/stdc++.h>
