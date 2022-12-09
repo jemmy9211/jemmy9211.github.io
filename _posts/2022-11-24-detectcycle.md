@@ -1,6 +1,6 @@
 ---
 layout: single
-title: "再有向圖中偵測cycle"
+title: "有向圖中偵測cycle"
 date:  2022-12-9 00:00:00 +0800
 permalink: /detectcycle/
 categories: 
