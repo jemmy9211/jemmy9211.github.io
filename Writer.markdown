@@ -11,8 +11,8 @@ permalink: /Writer/
 -----------
 #### Education: 
 ```     
-    NTHU CS
-    NCHU CS    
+    NYCU AI
+    NCHU CSE    
     TNFSH
 ```      
 #### Name:
