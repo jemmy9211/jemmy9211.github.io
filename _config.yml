@@ -122,6 +122,9 @@ author:
     - label: "天氣預報網頁"
       icon: "fas fa-fw fa-link"
       url: "https://jemmy9211.github.io/WheatherApplication/"
+      - label: "天氣預報網頁Vue版本"
+      icon: "fas fa-fw fa-link"
+      url: "https://jemmy9211.github.io/WheatherVue/"
 
 # Site Footer
 footer:
