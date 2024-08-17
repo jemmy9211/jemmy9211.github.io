@@ -119,9 +119,12 @@ author:
     - label: "Instagram"
       icon: "fab fa-fw fa-instagram"
       url: "https://instagram.com/jemmy_921"
-    - label: "天氣預報網頁Vue版本"
+    - label: "天氣預報網頁"
       icon: "fas fa-fw fa-link"
       url: "https://jemmy9211.github.io/WeatherVue/"
+    - label: "美股看盤網頁"
+      icon: "fas fa-fw fa-link"
+      url: "https://jemmy9211.github.io/StockVue/"
 
 # Site Footer
 footer:
