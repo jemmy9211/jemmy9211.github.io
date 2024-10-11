@@ -1,0 +1,128 @@
+---
+layout: single
+title: "object-oriented programming"
+date:  2020-6-14 00:00:00 +0800
+permalink: /ooplearning/
+categories: 
+  - c++
+tags:
+  - java
+  - c++
+---
+
+這學期的演算法課程裡，老師指定作業使用的語言是java，我過去學的語言是C/C++，雖然說我是會C++，但一直沒有OOP的觀念而且我大一的物件導向還沒修XD，因此我一開始有點怕怕的，可是實際寫過幾份作業後，漸漸對物件導向有一些感覺了，今天這篇文章，我將統整我對於OOP的認知，也當為自己記錄一下OOP的一些觀念，by the way，我會用C++來寫這篇文章，因為我對java還不熟...(有夠廢)。   
+     
+## 名詞介紹  
+物件導向裡面有些重要的名詞像是:  
+**Class(類別)** 他像一個模板可以製造出屬於他的object  
+**Objects(物件)**   他就是由class建立出來的物件可以拿來實際使用  
+**Methods(方法)**   他通常有一些功能有點像函式，它屬於某個類別    
+   
+``` c++
+class testclass{               //class
+    public:
+        int a=10;
+        int add(int i,int k){ //methods
+            return i+k;
+        }
+};
+```   
+## Constructors  
+Constructors是一個特別的methods，它會自動被呼叫，當它屬於的物件被建立的時候 
+值得注意的是他的寫法，它的名稱應該要他所屬於的類別一模一樣。   
+``` c++
+class constructortest{
+    public:
+        constructortest() {
+            cout << "hello!!" <<endl;
+        }
+};
+int main(){
+    constructortest tt3;
+    return 0;
+}
+```
+   
+## Access Specifiers(訪問修飾符)
+在C++裡，有3個access specifiers  
+_public_- members are accessible from outside the class    
+
+_private_- members cannot be accessed (or viewed) from outside the class   
+     
+_protected_-members cannot be accessed from outside the class, however, they can be accessed in inherited classes   
+   
+**Note:** 如果沒又特別標示，預設是被設為private   
+  
+下面這code完美示範了private和public的用法(encapsulation的範例)
+```c++
+class Employee{
+  private:
+    // Private attribute
+    int salary;
+
+  public:
+    // Setter
+    void setSalary(int s) {
+      salary = s;
+    }
+    // Getter
+    int getSalary() {
+      return salary;
+    }
+};
+
+int main() {
+  Employee myObj;
+  myObj.setSalary(50000);
+  cout << myObj.getSalary();
+  return 0;
+}
+```
+## Inheritance //先讀期末了繼承下回見
+在c++裡面，可以在一個新的class繼承另一個既有的class的attributes and method，大致可以分為下面的兩個概念
+* derived class
+* base class   
+
+derived class inherits base class的屬性和method，以下直接以範例說明  
+``` c++
+class A{
+  public: 
+    string a="this is a from class A";
+    void print(){
+      cout << "method from class A" << endl;
+    }
+}
+
+class BfromA: public A{
+  public:
+    string b="this is b from class B";
+}
+
+int main(){
+  B test;
+  test.print();
+  cout << B.a << B.b;
+
+}
+```
+除此之外，還有multiple inheritance的功能，就是一個class可以同時繼承多個class。  
+
+過了一年後我學了java，這是hack md test!  
+
+
+
+
+
+
+
+
+> 我想做的事，沒有人可以理解，於是我要扛住。
+
+
+_2020/6/4_
+
+
+
+
+
+

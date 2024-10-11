@@ -1,0 +1,101 @@
+---
+layout: single
+title: "Yolov4簡易安裝教學"
+date:  2021-12-18 00:00:00 +0800
+permalink: /yolov4install/
+categories: 
+  - "tutorial"
+tags:
+  - "yolov4"
+  - "Stock"
+---
+## 前言   
+這篇文章主要敘述如何在自己PC上建置yolov4的環境和使用yolov4訓練即辨識物件  
+    
+
+## Yolov4訓練預先設定    
+完成上述安裝並且生出darknet.exe之後就能開始訓練我們的資料  
+要讓yolov4成功開始訓練需要六個檔案  
+``` 
+1. obj.data  
+2. obj.names  
+3. train.txt  
+4. valid.txt  
+5. yolov4tiny.cfg  
+6. yolov4tiny.conv.29  
+```   
+
++ obj.data是讓yolov4認得你訓練資料結構的檔案，具體寫法會像這樣
+![](/assets/y1.jpg)
+可以看到它包括class的數量，以及train.txt/valid.txt/obj.names的位置
++ Backup是yolov4訓練完後權重儲存的資料夾  
+
++ obj.names是所訓練class的名稱  
+![](/assets/y2.jpg)  
+以我的例子我這次訓練有兩個類別分別為cross1和cross2  
+  
++ Train.txt/valid.txt放的分別是訓練資料的jpg檔和手動標註過後的txt檔案  
+![](/assets/y3.jpg)   
++ 最後是yolov4tiny.cfg    
+它是訓練用的設定檔，我們需要調整裡面的一些參數才能成功訓練，參數的調整主要可以是調整filters和classes，根據文件裡提供的規則　　
+　　
+> Filters=(classes+5)*3    
+例如:如果classes=2，則filters=(2+5)*3   
+調整的參數(filters)位置會在yolov4tiny.cfg檔案裏面的[convolutional]，切記只需要改變每個[yolo] layer之前的[convolutional] > > layer裡的filters，如下圖所示   
+![](/assets/y5.jpg)  
+並且在每個[yolo] layer裡面的classes參數也要調整成你這次訓練所分類的classes  
+例如:classes=2。  
+
+調整完所有檔案後將這六個檔案放在darknet所在的目錄下
+C:\Users\jEmmY\darknet\build\darknet\x64\
+目錄底下的檔案大致上會跟下圖很像，我把那六個重要的檔案和訓練所需要的資料都放在matrain資料夾裡，matrain所在的位置需要和darknet.exe在同一個目錄下  
+
+值得注意的是yolov4tiny.conv.29是預先訓練的權重，當我們進行第一次訓練時會用到它  
+![](/assets/y6.png)  
+
+
+## Yolov4 訓練    
+辛苦的準備完上面的環境+檔案後，就可以開始訓練我們的模型了!  
+首先先打開cmd進入你存放darknet.exe的地方  
+![](/assets/y7.png) 
+然後執行指令
+```  
+darknet.exe detector train data/obj.data matrain/yolov4tiny.cfg matrain/yolov4tiny.conv.29  
+```
+![](/assets/y8.png)  
+如果沒有錯誤訊息就會開始訓練  
+左側的圖表是訓練過程loss的變化  
+並且每1000 iterations會根據 obj.data裡back up 的路徑儲存一個weights檔案進去weights的資料夾裡。  
+![](/assets/y9.png)    
+最後訓練完的weights檔會在yolov4tiny_final.weights。
+ 
+有了weights檔案就能試試看yolo能不能抓出我們所需的pattern  
+``` 
+darknet.exe detector test data/obj.data matrain/yolov4tiny.cfg matrain/weights/yolov4tiny_2000.weights  
+```   
+
+我示範下圖示範的是用iteration=2000的weights檔所跑出來的結果  
+我這邊所label的pattern是10日均線和20日均線交叉的位置  
+![](/assets/y10.png)  
+下面幾張測試的截圖可以更清楚的看到label的地方  
+紅色的cross1是10日均線交叉過20日均線  
+綠色的cross2是20日均線交叉過10日均線  
+分別是這個模型的2個classes  
+![](/assets/y11.png)  
+![](/assets/y12.png)  
+![](/assets/y13.png)  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
