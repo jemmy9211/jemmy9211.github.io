@@ -96,7 +96,7 @@ analytics:
 # Site Author
 author:
   name             : "JemmyChen"
-  avatar           :  "/assets/1.jpg"
+  avatar           :  "/assets/jemmy.jpg"
   bio              : "紀錄一些學習的過程和筆記"
   location         : "Taiwan"
   email            : ""
@@ -104,6 +104,9 @@ author:
     #- label: "Email"
      # icon: "fas fa-fw fa-envelope-square"
       # url: " jemmy9211@gmail.com"
+    - label: "CV"
+      icon: "fas fa-fw fa-link"
+      url: "https://jemmy9211.github.io/assets/Jemmy_s_Software_Engineering_Resume.pdf"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       url: "https://jemmy9211.github.io"
