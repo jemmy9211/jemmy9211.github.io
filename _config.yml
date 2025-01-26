@@ -239,7 +239,7 @@ whitelist:
   - jekyll-feed
   - jekyll-include-cache
 
-
+# add testing comment for this file
 # Archives
 #  Type
 #  - GitHub Pages compatible archive pages built with Liquid ~> type: liquid (default)
