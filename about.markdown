@@ -7,7 +7,25 @@ permalink: /about/
 這是一個紀錄學習的部落格。一開始會想建立這個部落格 ，單純是想擁有一個有自己風格的網站，可以寫一些自己真正有興趣的內容，於是我試了許多可以寫部落格的網站，最後決定用**jekyll**生成部落格，它的自由度比較高，可以讓網頁的風格比較多樣化，但網頁生成後要放在哪裡呢?難不成要搞一台server?  
 不，**githubpages**提供我一個放置網頁的地方，讓我漂泊的心，有一個安全的地方得以安放。但要是用**githubpages**還是要會一些很基礎的git技能，所以呢，我就嗑了網路上的資料，大概懂一些些git，經過了上述歷程，這個網頁就在這邊ㄌ。
 
-
 > 探索世界，探索自我 
 
 _2019/12/24_
+
+### About Me
+
+**姓名 / Name:**  
+Guan-Xuan Chen
+
+**學歷 / Education:**
+- NTHU CS
+- NCHU CS
+- TNFSH
+
+**聯絡方式 / Contact:**  
+Email: jemmy9211@gmail.com
+
+**語言能力 / Language Skills:**  
+English / Chinese
+
+**國家 / Country:**  
+Taiwan
