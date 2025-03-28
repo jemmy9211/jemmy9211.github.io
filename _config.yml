@@ -11,7 +11,7 @@
 # https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/#installing-the-theme
 #theme                  : "minimal-mistakes-jekyll"
 #remote_theme           : "mmistakes/minimal-mistakes"
-minimal_mistakes_skin    : "dark"  #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
+minimal_mistakes_skin    : "default"  #"default" "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 # Site Settings
 locale                   : "zh-TW"
 title                    : "Jemmy Blog"
@@ -84,6 +84,21 @@ social:
   type                   : # Person or Organization (defaults to Person)
   name                   : # If the user or organization name differs from the site's name
   links: # An array of links to social media profiles
+    - label: "CV"
+      icon: "fas fa-fw fa-link"
+      url: "https://jemmy9211.github.io/assets/Jemmy_s_Software_Engineering_Resume.pdf"
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/jemmy9211"
+    - label: "Instagram"
+      icon: "fab fa-fw fa-instagram"
+      url: "https://instagram.com/jemmy_921"
+    - label: "天氣預報網頁"
+      icon: "fas fa-fw fa-link"
+      url: "https://jemmy9211.github.io/WeatherVue/"
+    - label: "美股看盤網頁"
+      icon: "fas fa-fw fa-link"
+      url: "https://jemmy9211.github.io/StockVue/"
 
 # Analytics
 analytics:
@@ -101,21 +116,9 @@ author:
   location         : "Taiwan"
   email            : ""
   links:
-    #- label: "Email"
-     # icon: "fas fa-fw fa-envelope-square"
-      # url: " jemmy9211@gmail.com"
     - label: "CV"
       icon: "fas fa-fw fa-link"
       url: "https://jemmy9211.github.io/assets/Jemmy_s_Software_Engineering_Resume.pdf"
-    - label: "Website"
-      icon: "fas fa-fw fa-link"
-      url: "https://jemmy9211.github.io"
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url: "https://twitter.com/"
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url: "https://facebook.com/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jemmy9211"
@@ -132,24 +135,9 @@ author:
 # Site Footer
 footer:
   links:
-    - label: "Twitter"
-      icon: "fab fa-fw fa-twitter-square"
-      # url:
-    - label: "Facebook"
-      icon: "fab fa-fw fa-facebook-square"
-      # url:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: https://github.com/jemmy9211
-    - label: "GitLab"
-      icon: "fab fa-fw fa-gitlab"
-      # url:
-    - label: "Bitbucket"
-      icon: "fab fa-fw fa-bitbucket"
-      # url:
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      # url:
 
 
 # Reading Files
