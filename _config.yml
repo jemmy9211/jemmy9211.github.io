@@ -22,7 +22,7 @@ description              : "分享科學知識、程式設計和生活體驗的�
 url                      : "https://jemmy9211.github.io"  # the base hostname & protocol for your site
 baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "jemmy9211/jemmy9211.github.io"  # GitHub username/repo-name
-teaser                   : "/assets/teaser.jpeg"  # path of fallback teaser image
+teaser                   : "/assets/images/teaser.jpeg"  # path of fallback teaser image
 logo                     : ""  # path of logo image to display in the masthead
 masthead_title           : "Jemmy Blog"  # overrides the website title displayed in the masthead
 breadcrumbs              : true  # true, false (default)
@@ -71,7 +71,7 @@ facebook:
   app_id                 : ""
   publisher              : "facebook"
 
-og_image                 : "/assets/opimg.png"  # Open Graph/Twitter default site image
+og_image                 : "/assets/images/opimg.jpg"  # Open Graph/Twitter default site image
 og_type                  : "website"  # 明確指定 Open Graph 類型
 
 # Social Links
@@ -92,7 +92,7 @@ analytics:
 # Site Author
 author:
   name                   : "JemmyChen"
-  avatar                 : "/assets/jemmy.jpg"
+  avatar                 : "/assets/images/jemmy.jpg"
   bio                    : "紀錄一些學習的過程和筆記"
   location               : "Taiwan"
   email                  : ""
@@ -283,3 +283,24 @@ future: false  # 不發布未來日期的文章
 show_drafts: false  # 不顯示草稿
 limit_posts: 0  # 不限制文章數量
 highlighter_style: "github"  # 程式碼高亮樣式
+
+# Teaser overlay color (used with `overlay_image`)
+teaser_color:
+
+# Site Teaser in Masthead
+#
+# Default is `true` which uses the `header_image`.
+# `false` will use the `site_logo` instead.
+masthead_teaser: true
+
+# Meta Description
+#
+# Used by search engines. Can be set on a page-by-page basis.
+#
+# For specifying the image that will be used when sharing a link to your site.
+#
+# Example:
+# - og_image: "/assets/images/page-meta-image.png"
+#
+# For specifying the default image that will be used when sharing a link to a page.
+# This is a fallback and can be overridden on a page-by-page basis.
