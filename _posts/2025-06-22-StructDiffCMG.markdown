@@ -5,158 +5,93 @@ categories: [Research, AI, NLP]
 tags: [Commit Message Generation, LLM, StructDiffCMG, Software Engineering]
 ---
 
-# StructDiffCMG: A Hybrid Retrieval-Based Framework for Commit Message Generation
+# Beyond "Fix Bug": Unlocking Smarter Commit Messages with AI
 
-> **Structured Diff Representation and Sequential Hybrid Retrieval for Enhanced LLM-Based Commit Message Generation**
+## The Hidden Cost of Vague Commit Messages
 
----
+Every developer knows the drill: you've just finished a complex piece of code, fixed a tricky bug, or implemented a new feature. The next step? Writing a commit message. Often, in the rush of deadlines, this crucial task becomes an afterthought. We've all seen (or written!) commit messages like "Update" or "Fix bug." While seemingly minor, this common habit has significant implications for software maintenance, team collaboration, and overall project quality. Vague commit messages obscure intent, make debugging a nightmare, and hinder effective communication among team members.
 
-## 🧩 Motivation
+The field of **Automatic Commit Message Generation (CMG)** aims to solve this problem by leveraging computational approaches to summarize code changes automatically and meaningfully. But generating high-quality, human-like commit messages from raw code differences (diffs) is a non-trivial challenge.
 
-Commit messages are critical in modern software development. They document code changes, support debugging, and facilitate team collaboration. Yet, due to time constraints or neglect, developers often leave vague or uninformative messages like “update” or “fix,” which harms future maintainability.
+## The Evolution of CMG: From Retrieval to Hybrid Approaches
 
-### 💡 Solution:
+Early CMG efforts largely fell into two categories:
 
-**StructDiffCMG** is a lightweight, training-free framework that generates accurate, stylistically consistent commit messages using structured diffs, exemplar retrieval, and LLMs.
+1.  **Retrieval-Based Methods (e.g., NNGen, CC2Vec):** These methods scoured historical commit repositories for similar code changes and simply reused their corresponding messages. While straightforward, they often struggled with novel changes or unique coding styles, acting more like a "copy-paste" solution than true generation.
+2.  **Learning-Based Methods (e.g., CommitGen, CoDiSum, PtrGNCMsg, FIRA):** These approaches utilized deep learning (RNNs, Transformers, GNNs) to learn mappings between code diffs and natural language descriptions. They offered greater adaptability and context awareness, capable of generating new messages, but often faced challenges with out-of-vocabulary (OOV) terms and capturing fine-grained structural information.
 
----
+More recently, **Hybrid Methods** have emerged, attempting to combine the strengths of both. Approaches like ATOM, CoRec, and RACE demonstrated the power of retrieval-augmented generation (RAG) by using similar past commits to guide new message generation. Our work, **StructDiffCMG**, builds upon these advancements, pushing the boundaries further by integrating novel retrieval, representation, and post-processing techniques.
 
-## 🧱 System Architecture Overview
+## Introducing StructDiffCMG: Our Novel Hybrid Framework
 
-StructDiffCMG is composed of four core components:
+StructDiffCMG is designed to generate precise, informative, and stylistically consistent commit messages. It achieves this through a powerful combination of optimized information retrieval, a unique structured data representation, and an intelligent post-processing pipeline, all powered by Large Language Models (LLMs).
 
-### 1. 🗂 Structured Diff Representation
+Here's how StructDiffCMG works:
 
-* Raw Git diffs are transformed into **structured JSON format** using a custom `DiffAnalyzer`.
-* Captures:
+### 1. Two-Stage Hybrid Retrieval Strategy
 
-  * File paths
-  * Line-level additions/deletions/modifications
-  * Context via hunk headers
+Unlike prior methods that might perform semantic and lexical searches in parallel, StructDiffCMG employs a **sequential two-stage retrieval** process to find the most relevant historical commit examples (exemplars):
 
-> This structured format enables LLMs to better understand change semantics.
+*   **Step 1: Semantic Pre-filtering:** We convert the query code diff into a dense semantic vector using a **Sentence Transformer** model (specifically `all-MiniLM-L6-v2`). This embedding captures the high-level meaning of the code change. We then use **Faiss**, a high-performance similarity search library, to quickly retrieve the top-K (typically 10) semantically similar diffs from our pre-indexed CommitBench dataset. This efficiently narrows down the pool to conceptually relevant candidates.
+*   **Step 2: Lexical Re-ranking:** From these top-K candidates, we apply a second filter based on **TF-IDF (Term Frequency-Inverse Document Frequency)** cosine similarity. This step prioritizes candidates that also share specific keywords, variable names, and function names with the query diff. By combining semantic and lexical similarity, we ensure the selected exemplars are both conceptually aligned and linguistically relevant, significantly enhancing the quality of the prompt for the LLM.
 
----
+### 2. Structured Code Diff Representation with DiffAnalyzer
 
-### 2. 🔍 Sequential Hybrid Retrieval
+Raw Git diffs are notoriously hard for LLMs to fully interpret due to their unstructured, line-by-line nature. To address this, we developed **DiffAnalyzer**. This crucial component parses raw Git diff outputs and transforms them into a **custom-designed structured JSON format**.
 
-A two-stage retrieval strategy selects relevant exemplar commits from a dataset:
+This structured representation systematically extracts:
+*   File-level metadata (original and new filenames).
+*   Hunk structures (contiguous blocks of changes) including starting line numbers and lengths.
+*   Line-level changes, explicitly categorizing them as additions, deletions, or modifications.
+*   Contextual lines around the changes.
 
-* **Stage 1: Semantic Filtering**
+This rich, machine-readable JSON format allows the LLM to more comprehensively capture the contextual information and intent behind the code changes, going beyond just surface-level text.
 
-  * Uses `all-MiniLM-L6-v2` to embed diffs
-  * FAISS is used to retrieve top-K similar diffs by vector distance
+### 3. LLM-Powered Commit Message Generation
 
-* **Stage 2: Lexical Re-ranking**
+With the query diff transformed into structured JSON and highly relevant exemplars (structured diff + their human-written messages) retrieved, StructDiffCMG uses a carefully crafted prompt template to guide the LLM. We evaluated our approach with various open-source LLMs, including `Llama 3 (8B)`, `Gemma 2 (9B)`, and `Qwen2.5-Coder (7B)`. The prompt provides a concrete example from past development, enabling the LLM to generate concise, accurate, and convention-aligned commit messages through in-context learning.
 
-  * Applies TF-IDF to re-rank semantically similar candidates
-  * Ensures both **contextual** and **stylistic alignment**
+### 4. Robust Post-Processing Pipeline
 
-> The top exemplar diffs and their messages are used to construct LLM prompts.
+To further enhance the clarity, quality, and practical usefulness of the generated messages, StructDiffCMG includes an advanced multi-stage post-processing pipeline:
 
----
+1.  **Normalization:** Standardizes text (lowercase, punctuation removal, underscore replacement, numeric exclusion).
+2.  **Tokenization & Lemmatization:** Breaks text into words and unifies grammatical variants.
+3.  **Enhanced Stopword Filtering:** Removes common filler words while preserving domain-specific terms using TF-IDF analysis on a commit message corpus.
+4.  **Pattern Matching:** A greedy algorithm identifies informative verb-noun structures (e.g., "fix bug," "submit credential") based on statistical analysis from the CommitBench dataset.
+5.  **Reconstruction:** Reassembles selected patterns into fluent, imperative-form messages adhering to professional standards.
+6.  **Error Handling:** Fallback mechanisms for malformed inputs ensure robustness.
 
-### 3. 📤 Prompt Construction
+For instance, a raw input like:
+`"FIXED_login_bug: resolved the error 500 issue when users submit invalid credentials (ID#45)"`
+might be refined to:
+`"Fix authentication bug causing login error when user submits invalid credentials."`
 
-* Prompts are built by inserting the **structured query diff** and the **retrieved exemplar pair(s)** into predefined templates.
-* Two templates are used:
+## Impressive Results: Outperforming State-of-the-Art with Smaller Models
 
-  * **Basic Prompt**: Only the input diff
-  * **Advanced Prompt**: Includes retrieved examples for few-shot prompting
+Our experiments, conducted on the widely recognized CommitBench dataset (90,661 Java diff-message pairs), demonstrate that StructDiffCMG (our most comprehensive variant, `basicDAPP`) significantly outperforms existing methods across standard metrics like **BLEU**, **ROUGE-L**, and **METEOR**.
 
----
+Here's a snapshot of our key findings compared to prior state-of-the-art approaches:
 
-### 4. 🧼 Post-Processing
+| Approach              | BLEU  | ROUGE-L | METEOR |
+| :-------------------- | :---- | :------ | :----- |
+| CodeT5                | 9.68  | 27.20   | 23.65  |
+| Llama 3 (70B)         | 4.84  | 19.88   | 20.58  |
+| **StructDiffCMG (Llama 3 - 8B)** | **10.16** | **26.4**    | **23.2**   |
+| **StructDiffCMG (Gemma 2 - 9B)** | **10.32** | **27.5**    | **23.9**   |
+| **StructDiffCMG (Qwen2.5-Coder - 7B)** | **11.38** | **26.3**    | **23.2**   |
 
-Enhances generated messages by:
+*   **Significant Performance Boost:** StructDiffCMG achieves BLEU scores exceeding 10, ROUGE-L scores of 27.5, and METEOR scores of 23.9.
+*   **Efficiency Advantage:** Remarkably, our approach, using LLMs with **fewer than 10 billion parameters**, consistently outperforms even much larger models like Llama 3 (70B) and fine-tuned CodeT5 models. For example, our `Gemma 2 (9B)` variant surpasses all models reported in previous work for METEOR and ROUGE-L, and achieves a strong BLEU score.
+*   **Component Effectiveness:** Our ablation study confirms that each component – retrieval augmentation, structured diff representation via DiffAnalyzer, and post-processing – contributes substantially to these performance gains. For instance, `basicDAPP` improved BLEU scores by up to 705.6% on Mistral-Nemo compared to the `basicNR` baseline (no retrieval or processing).
 
-* Normalizing and lemmatizing text
-* Applying TF-IDF-based filtering
-* Enforcing imperative tone (e.g., "Add logging", "Fix bug")
-* Matching typical developer writing patterns
+While StructDiffCMG does introduce some computational overhead due to retrieval and processing steps (making it slower than basic LLM generation), the trade-off is justified by the significant boost in message quality and its ability to achieve state-of-the-art results with smaller, more efficient models.
 
-Example transformation:
+## The Future of Commit Messages
 
-```
-Input: "FIXED login_bug: resolved the error 500 issue when users submit invalid credentials"
-Output: "Fix authentication bug causing login error when user submits invalid credentials"
-```
+StructDiffCMG represents a significant leap forward in automatic commit message generation. By integrating an intelligent two-stage retrieval mechanism, a robust structured diff representation, and a sophisticated post-processing pipeline, we offer a practical and scalable solution that generates high-quality, relevant, and stylistically consistent commit messages.
 
----
+This not only promises to **enhance developer productivity** by automating a tedious task but also **improves overall software project maintainability** by ensuring clearer, more informative version histories.
 
-## 📊 Experimental Results
-
-Tested on the **CommitBench** dataset (7,661 Java diffs), StructDiffCMG demonstrates **state-of-the-art performance**:
-
-| Model Variant                   | BLEU      | ROUGE-L  | METEOR   |
-| ------------------------------- | --------- | -------- | -------- |
-| CommitGen                       | 1.36      | 10.59    | 9.17     |
-| CodeT5 (fine-tuned)             | 9.68      | 27.20    | 23.65    |
-| ChatGPT                         | 3.11      | 18.09    | 19.25    |
-| Llama3 (70B) via REACT \[15]    | 4.84      | 19.88    | 20.58    |
-| **StructDiffCMG (Qwen2.5, 7B)** | **11.38** | **26.3** | **23.2** |
-
-> ✅ Outperforms fine-tuned and much larger models using only small open-weight LLMs (≤10B parameters).
-
----
-
-## 🔬 Ablation Study: Component Contributions
-
-| Variant     | Description                                   | BLEU (Llama3) |
-| ----------- | --------------------------------------------- | ------------- |
-| `basicNR`   | Basic LLM prompting, no retrieval             | 1.68          |
-| `basic`     | Retrieval with no structuring/post-processing | 7.52          |
-| `basicDA`   | Adds DiffAnalyzer (structured diffs)          | 10.16         |
-| `basicDAPP` | Full system with post-processing              | **11.38**     |
-
-> Each component (retrieval, structuring, post-processing) significantly improves output quality.
-
----
-
-## ⏱ Inference Time
-
-| Model         | `basic` | `basicDAPP` | `basicNR` |
-| ------------- | ------- | ----------- | --------- |
-| Llama3 (8B)   | 7378ms  | 8247ms      | 1213ms    |
-| Qwen2.5-coder | 7000ms  | 7655ms      | 340ms     |
-| Gemma2 (9B)   | 10400ms | 11169ms     | 2082ms    |
-
-> While retrieval and post-processing introduce some latency, the accuracy gains justify the tradeoff for most scenarios.
-
----
-
-## 🏆 Key Contributions
-
-* ✅ Structured diff representation enhances model input clarity
-* ✅ Sequential hybrid retrieval ensures contextual and lexical relevance
-* ✅ Fully inference-based design—**no training or fine-tuning required**
-* ✅ Effective across multiple open-weight LLMs (LLaMA3, Qwen2.5, Gemma2)
-
----
-
-## 🚀 Future Work
-
-* Integrating issue tracker or PR descriptions for deeper context
-* Extending to more languages (e.g., Python, C++)
-* Improving post-processing with syntax-aware logic
-* Packaging as a GitHub Action or VSCode plugin
-
----
-
-## 📘 Citation
-
-```
-@inproceedings{chen2025structdiffcmg,
-  title={Structured Diff Representation and Sequential Hybrid Retrieval for Enhanced LLM-Based Commit Message Generation},
-  author={Chen, Guanxuan},
-  booktitle={TSC Thesis Symposium},
-  year={2025}
-}
-```
-
----
-
-## 🧠 Acknowledgments
-
-This project was conducted at the Software Engineering Lab, National Tsing Hua University. Special thanks to the CommitBench authors and open-source LLM communities.
+Our future work includes exploring the integration of external context like **issue tracker data** and extending support to a wider range of **programming languages** to further enhance the framework's generalizability and real-world impact.
 
