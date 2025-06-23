@@ -1,0 +1,8 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://jemmy9211.github.io/sitemap.xml
+
+# 允許搜尋引擎訪問所有頁面
+# 陳冠軒 jemmy9211 個人網站 

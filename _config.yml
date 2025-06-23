@@ -14,17 +14,17 @@ minimal_mistakes_skin    : "default"  # "default", "air", "aqua", "contrast", "d
 
 # Site Settings
 locale                   : "zh-TW"
-title                    : "Jemmy Blog"
+title                    : "Jemmy Blog | 陳冠軒個人網站"
 title_separator          : "//"
 subtitle                 : "about science"  # site tagline that appears below site title in masthead
-name                     : "JemmyChen"
-description              : "分享科學知識、程式設計和生活體驗的個人部落格"
+name                     : "陳冠軒 Jemmy Chen"
+description              : "陳冠軒 (Jemmy Chen) 的個人部落格 - 分享科學知識、程式設計、軟體工程和生活體驗。jemmy9211 技術筆記與學習心得分享。"
 url                      : "https://jemmy9211.github.io"  # the base hostname & protocol for your site
 baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "jemmy9211/jemmy9211.github.io"  # GitHub username/repo-name
 teaser                   : "/assets/images/teaser.jpeg"  # path of fallback teaser image
 logo                     : ""  # path of logo image to display in the masthead
-masthead_title           : "Jemmy Blog"  # overrides the website title displayed in the masthead
+masthead_title           : "Jemmy Blog | 陳冠軒"  # overrides the website title displayed in the masthead
 breadcrumbs              : true  # true, false (default)
 words_per_minute         : 200  # 提高閱讀速度估算
 date_format              : "%Y-%m-%d"  # 統一日期格式
@@ -84,18 +84,18 @@ social:
 
 # Analytics
 analytics:
-  provider               : false  # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag"  # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          : ""
+    tracking_id          : "G-XXXXXXXXXX"  # 請更換為你的實際 Google Analytics ID
     anonymize_ip         : true  # 啟用 IP 匿名化以符合 GDPR
 
 # Site Author
 author:
-  name                   : "JemmyChen"
+  name                   : "陳冠軒 Jemmy Chen"
   avatar                 : "/assets/images/jemmy.jpg"
-  bio                    : "紀錄一些學習的過程和筆記"
+  bio                    : "軟體工程師 | 資訊科學研究者 | 程式設計愛好者 | 分享技術學習與生活體驗"
   location               : "Taiwan"
-  email                  : ""
+  email                  : "jemmy9211@gmail.com"
   links:
     - label: "履歷 CV"
       icon: "fas fa-fw fa-file-pdf"
