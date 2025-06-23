@@ -1,5 +1,5 @@
 ---
-title: "StructDiffCMG: Commit Message Generation with Structure and Semantics"
+title: "StructDiffCMG: A Commit Message Generation Framework"
 date: 2025-06-22 12:00:00 +0800
 categories: [Research, AI, NLP]
 tags: [Commit Message Generation, LLM, StructDiffCMG, Software Engineering]
