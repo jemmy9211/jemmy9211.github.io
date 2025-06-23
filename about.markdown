@@ -2,12 +2,12 @@
 layout: single
 title: 關於我 | 陳冠軒 Jemmy Chen
 permalink: /about/
-description: "陳冠軒 (Jemmy Chen) - 軟體工程師、程式設計師。專精於資訊科學、電腦科學。jemmy9211 個人簡介與聯絡方式。"
+description: "陳冠軒 (Jemmy Chen) - 軟體工程師、程式設計師。專精於資訊科學、電腦科學。個人簡介與聯絡方式。"
 ---
 
 # 關於我 - 陳冠軒 (Jemmy Chen)
 
-你好！我是**陳冠軒**，網路上常用的帳號是 **jemmy9211**。
+你好！我是**陳冠軒**
 
 ## 個人簡介
 
@@ -20,7 +20,7 @@ description: "陳冠軒 (Jemmy Chen) - 軟體工程師、程式設計師。專�
 ## 個人資料
 
 - **姓名**: 陳冠軒 (Guan-Xuan Chen)
-- **網路代號**: jemmy9211, jemmy, JemmyChen
+- **網路代號**: jemmy, JemmyChen
 - **教育背景**:
   - 國立清華大學 資訊工程學系 (NTHU CS)
   - 國立中興大學 資訊科學與工程學系 (NCHU CS)

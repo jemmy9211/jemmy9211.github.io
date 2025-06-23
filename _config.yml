@@ -18,7 +18,7 @@ title                    : "Jemmy Blog | 陳冠軒個人網站"
 title_separator          : "//"
 subtitle                 : "about science"  # site tagline that appears below site title in masthead
 name                     : "陳冠軒 Jemmy Chen"
-description              : "陳冠軒 (Jemmy Chen) 的個人部落格 - 分享科學知識、程式設計、軟體工程和生活體驗。jemmy9211 技術筆記與學習心得分享。"
+description              : "陳冠軒 (Jemmy Chen) 的個人部落格 - 分享科學知識、程式設計、軟體工程和生活體驗。技術筆記與學習心得分享。"
 url                      : "https://jemmy9211.github.io"  # the base hostname & protocol for your site
 baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "jemmy9211/jemmy9211.github.io"  # GitHub username/repo-name
@@ -93,7 +93,7 @@ analytics:
 author:
   name                   : "陳冠軒 Jemmy Chen"
   avatar                 : "/assets/images/jemmy.jpg"
-  bio                    : "軟體工程師 | 資訊科學研究者 | 程式設計愛好者 | 分享技術學習與生活體驗"
+  bio                    : "資訊科學研究者"
   location               : "Taiwan"
   email                  : "jemmy9211@gmail.com"
   links:
