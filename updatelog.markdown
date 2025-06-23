@@ -1,6 +1,6 @@
 ---
 layout: single
-title: UpdateLog
+title: Update Log
 date:  2020-02-15 00:00:00 +0800
 permalink: /updatelog/
 ---

@@ -4,14 +4,14 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: /about/
-  - title: "照片集"
+  - title: "Photo Gallery"
     url: /gallery/
-  - title: "updatelog"
-    url: /updatelog/
   - title: "Categories"
     url: /categories/
   - title: "Tags"
     url: /tags/
+  - title: "Log"
+    url: /updatelog/
   # - title: "Sample Posts"
   #   url: /year-archive/
   # - title: "Sample Collections"
