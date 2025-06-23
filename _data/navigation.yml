@@ -4,6 +4,8 @@ main:
   #  url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
   - title: "About"
     url: /about/
+  - title: "照片集"
+    url: /gallery/
   - title: "updatelog"
     url: /updatelog/
   - title: "Categories"
