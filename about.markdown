@@ -1,41 +1,41 @@
 ---
 layout: single
-title: 關於我 | 陳冠軒 Jemmy Chen
+title: About Me | Jemmy Chen
 permalink: /about/
-description: "陳冠軒 (Jemmy Chen) - 專精於資訊科學、電腦科學。個人簡介與聯絡方式。"
+description: "Jemmy Chen - Specializing in Information Science and Computer Science. Personal introduction and contact information."
 ---
 
-你好！我是**陳冠軒**
+Hello! I'm **Jemmy Chen**
 
-## 個人簡介
+## About Me
 
-我是一名熱愛學習的軟體工程師和程式設計師，專精於電腦科學與資訊技術領域。這個部落格是我用來記錄學習歷程、分享技術知識和生活體驗的地方。
+I'm a passionate software engineer and programmer who loves learning, specializing in computer science and information technology. This blog is where I document my learning journey, share technical knowledge, and life experiences.
 
-一開始會想建立這個部落格，單純是想擁有一個有自己風格的網站，可以寫一些自己真正有興趣的內容。於是我試了許多可以寫部落格的網站，最後決定用 **Jekyll** 生成部落格，它的自由度比較高，可以讓網頁的風格比較多樣化。但網頁生成後要放在哪裡呢？難不成要搞一台 server？不，**GitHub Pages** 提供我一個放置網頁的地方，讓我漂泊的心，有一個安全的地方得以安放。
+Initially, I wanted to create this blog simply because I wanted to have a website with my own style where I could write about topics I'm genuinely interested in. I tried many blogging platforms and finally decided to use **Jekyll** to generate my blog, as it offers greater flexibility and allows for more diverse web page styles. But where to host the generated website? Do I need to set up a server? No, **GitHub Pages** provides me with a place to host my website, giving my wandering heart a safe place to rest.
 
-> 探索世界，探索自我 
+> Explore the world, explore myself 
 
-## 個人資料
+## Personal Information
 
-- **姓名**: 陳冠軒 (Guan-Xuan Chen)
-- **網路代號**: jemmy, JemmyChen
-- **教育背景**:
-  - 國立清華大學 資訊工程學系 (NTHU CS)
-  - 國立中興大學 資訊科學與工程學系 (NCHU CS)
-  - 台南一中 (TNFSH)
-- **專業領域**: 軟體工程、程式設計、資訊科學
-- **聯絡方式**: jemmy9211@gmail.com
-- **居住地**: 台灣 (Taiwan)
-- **網站**: https://jemmy9211.github.io
+- **Name**: Guan-Xuan Chen (Jemmy Chen)
+- **Username**: jemmy, JemmyChen
+- **Education**:
+  - National Tsing Hua University, Department of Computer Science (NTHU CS)
+  - National Chung Hsing University, Department of Computer Science and Information Engineering (NCHU CS)
+  - Tainan First Senior High School (TNFSH)
+- **Professional Fields**: Software Engineering, Programming, Computer Science
+- **Contact**: jemmy9211@gmail.com
+- **Location**: Taiwan
+- **Website**: https://jemmy9211.github.io
 
-## 聯絡我
+## Contact Me
 
-如果你對我的文章有任何問題或建議，歡迎透過以下方式聯絡：
+If you have any questions or suggestions about my articles, feel free to contact me through the following methods:
 
 - **Email**: jemmy9211@gmail.com
 - **GitHub**: [github.com/jemmy9211](https://github.com/jemmy9211)
 - **Instagram**: [@jemmy_921](https://instagram.com/jemmy_921)
 
-感謝你的造訪！
+Thank you for visiting!
 
-_最後更新：2025年1月_
+_Last updated: January 2025_

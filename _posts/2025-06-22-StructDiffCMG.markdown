@@ -1,11 +1,11 @@
 ---
 title: "StructDiffCMG: A Commit Message Generation Framework"
 date: 2025-06-22 12:00:00 +0800
-categories: [Research, AI, NLP]
-tags: [Commit Message Generation, LLM, StructDiffCMG, Software Engineering]
+categories: [Research, AI]
+tags: [Commit Message Generation]
 ---
 
-# Beyond "Fix Bug": Unlocking Smarter Commit Messages with AI
+### Beyond "Fix Bug": Unlocking Smarter Commit Messages with AI
 
 ### The Hidden Cost of Vague Commit Messages
 
