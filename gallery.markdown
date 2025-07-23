@@ -12,32 +12,36 @@ gallery:
     image_path: /assets/images/jemmy.jpg
     alt: "個人照片"
     title: "個人照片"
+  - url: /assets/images/graduatenthu.jpg
+    image_path: /assets/images/graduatenthu.jpg
+    alt: "graduate nthu"
+    title: "graduate nthu"
   - url: /assets/images/jemmyyoung.jpg
     image_path: /assets/images/jemmyyoung.jpg
-    alt: "年輕時的照片"
-    title: "年輕時的照片"
+    alt: "年輕"
+    title: "年輕"
   - url: /assets/images/portfolio.png
     image_path: /assets/images/portfolio.png
-    alt: "作品集"
-    title: "作品集" 
+    alt: "日本"
+    title: "日本" 
 fun_gallery:
-  - url: /assets/images/cute.png
-    image_path: /assets/images/cute.png
-    alt: "可愛圖片"
-    title: "可愛圖片"
-  - url: /assets/images/cry.png
-    image_path: /assets/images/cry.png
-    alt: "表情圖片"
-    title: "表情圖片"
+  - url: /assets/images/girl.jpg
+    image_path: /assets/images/girl.jpg
+    alt: "girl"
+    title: "girl"
+  - url: /assets/images/labview.jpg
+    image_path: /assets/images/labview.jpg
+    alt: "lab"
+    title: "lab"
 ---
 
 歡迎來到我的照片集！
 
-## 個人照片與回憶
+## Me
 
-{% include gallery caption="我的個人照片和回憶收藏" %}
+{% include gallery caption="我的個人照片" %}
 
-## 有趣的圖片
+## Life
 
 {% include gallery id="fun_gallery" caption="一些有趣和可愛的圖片" %}
 
