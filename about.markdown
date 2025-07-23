@@ -2,7 +2,7 @@
 layout: single
 title: 關於我 | 陳冠軒 Jemmy Chen
 permalink: /about/
-description: "陳冠軒 (Jemmy Chen) - 軟體工程師、程式設計師。專精於資訊科學、電腦科學。個人簡介與聯絡方式。"
+description: "陳冠軒 (Jemmy Chen) - 專精於資訊科學、電腦科學。個人簡介與聯絡方式。"
 ---
 
 你好！我是**陳冠軒**
