@@ -97,9 +97,6 @@ author:
   location               : "Taiwan"
   email                  : "jemmy9211@gmail.com"
   links:
-    - label: "履歷 CV"
-      icon: "fas fa-fw fa-file-pdf"
-      url: "https://jemmy9211.github.io/assets/Jemmy_s_Software_Engineering_Resume.pdf"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jemmy9211"
