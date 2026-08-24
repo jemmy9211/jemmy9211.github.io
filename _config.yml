@@ -14,17 +14,17 @@ minimal_mistakes_skin    : "default"  # "default", "air", "aqua", "contrast", "d
 
 # Site Settings
 locale                   : "zh-TW"
-title                    : "Jemmy Blog | 陳冠軒個人網站"
+title                    : "Jemmy Blog"
 title_separator          : "//"
 subtitle                 : "about science"  # site tagline that appears below site title in masthead
-name                     : "陳冠軒 Jemmy Chen"
-description              : "陳冠軒 (Jemmy Chen) 的個人部落格 - 分享科學知識、程式設計、軟體工程和生活體驗。技術筆記與學習心得分享。"
+name                     : "Jemmy Chen"
+description              : ""
 url                      : "https://jemmy9211.github.io"  # the base hostname & protocol for your site
 baseurl                  : ""  # the subpath of your site, e.g. "/blog"
 repository               : "jemmy9211/jemmy9211.github.io"  # GitHub username/repo-name
 teaser                   : "/assets/images/teaser.jpeg"  # path of fallback teaser image
 logo                     : ""  # path of logo image to display in the masthead
-masthead_title           : "Jemmy Blog | 陳冠軒"  # overrides the website title displayed in the masthead
+masthead_title           : "Jemmy Blog"  # overrides the website title displayed in the masthead
 breadcrumbs              : true  # true, false (default)
 words_per_minute         : 200  # 提高閱讀速度估算
 date_format              : "%Y-%m-%d"  # 統一日期格式
@@ -67,7 +67,7 @@ twitter:
   card                   : "summary_large_image"  # 改善 Twitter 卡片顯示
 
 facebook:
-  username               : "陳冠軒"
+  username               : ""
   app_id                 : ""
   publisher              : "facebook"
 
@@ -91,24 +91,18 @@ analytics:
 
 # Site Author
 author:
-  name                   : "陳冠軒 Jemmy Chen"
+  name                   : "Jemmy Chen"
   avatar                 : "/assets/images/jemmy.jpg"
-  bio                    : "電腦科學研究者"
+  bio                    : ""
   location               : "Taiwan"
   email                  : "jemmy9211@gmail.com"
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/jemmy9211"
-    - label: "Instagram"
-      icon: "fab fa-fw fa-instagram"
-      url: "https://instagram.com/jemmy_921"
     - label: "天氣預報網頁"
       icon: "fas fa-fw fa-cloud-sun"
       url: "https://jemmy9211.github.io/TWeather/"
-    - label: "美股看盤網頁"
-      icon: "fas fa-fw fa-chart-line"
-      url: "https://jemmy9211.github.io/StockVue/"
 
 # Site Footer
 footer:
