@@ -1,85 +1,200 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jemmy Chen</title>
-</head>
-<body>
-    <div style="display: flex; align-items: center;">
-        <img src="./assets/jemmy.jpg" alt="Jemmy Chen" style="width: 100px; height: 100px; border-radius: 50%; margin-right: 20px;">
-        <div>
-            <h1>Jemmy Chen</h1>
-        </div>
-    </div>
-    <h2>About Me</h2>
-    <p>I am a Firmware Engineer at MediaTek with one year of industry experience, specializing in Linux and
-Zephyr driver development and embedded system development. My current work focuses on
-developing and testing firmware drivers, verifying FPGA and physical chip functionality, and assisting
-with chip bring-up activities. I also have experience applying AI technologies to software development,
-including developing a RAG system and MCP based on an internal kernel driver. With a background in
-Computer Science and experience in both software engineering and system-level development, I am
-interested in building efficient and reliable software systems and applying emerging technologies to
-solve practical problems. You can view my 
-        <a href="https://jemmy9211.github.io/" target="_blank">Website</a> here.</p>
-
-    <h2>Portfolio</h2>
-    <ul>
-        <li><a href="https://jemmy9211.github.io/TWeather/" target="_blank">TWeather</a></li>
-        <li><a href="https://github.com/jemmy9211/gitbro" target="_blank">gitbro</a></li>
-    </ul>
-
-    <h2>Contact</h2>
-    <ul>
-        <li><strong>Email：</strong>jemmy9211@gmail.com</li>
-    </ul>
-
-    <p>&copy; 2024 Jemmy All Rights Reserved</p>
-</body>
-</html>
-<script>
-    // js
-</script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jemmy Chen</title>
 <style>
+:root {
+  --paper: #F4EFE3;
+  --ink: #23211D;
+  --muted: #7A746A;
+  --marker: rgba(240, 206, 84, 0.72);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background-color: var(--paper);
+}
+
 body {
-    font-family: 'Rubik', -apple-system, BlinkMacSystemFont, 'Segoe UI',
-        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue',
-        sans-serif;
-    font-size: calc(10px + 0.33vw);
-    -webkit-font-smoothing: antialiased;
-    padding: 2vh 10vw;
-    color: black;
-    background-color: #BED7DC;
+  position: relative;
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  font-family: "Iowan Old Style", Charter, Georgia, "Noto Serif TC", "Songti TC", serif;
+  font-size: clamp(16px, 0.9rem + 0.3vw, 18px);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  /* 紙張邊緣微微變暗，像一張實體紙 */
+  background:
+    radial-gradient(ellipse at 50% 35%, rgba(255, 252, 244, 0.55) 0%, rgba(255, 252, 244, 0) 60%),
+    radial-gradient(ellipse at 50% 50%, rgba(0, 0, 0, 0) 55%, rgba(110, 90, 55, 0.16) 100%);
 }
+
+/* 紙纖維顆粒 */
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  opacity: 0.7;
+  mix-blend-mode: multiply;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='240'%3E%3Cfilter id='n' x='0' y='0' width='100%25' height='100%25'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 .42 0 0 0 0 .34 0 0 0 0 .22 0 0 0 .22 0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+main {
+  position: relative;
+  z-index: 1;
+  max-width: 36rem;
+  margin: 0 auto;
+  padding: 12vh 1.5rem 8vh;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 3.5rem;
+}
+
+header img {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  transition: transform 300ms cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 300ms ease;
+}
+
 h1 {
-    font-size: 4em;
-    font-weight: 500;
-    margin-bottom: 0;
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.2;
 }
+
+h2 {
+  margin: 3rem 0 0.75rem;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--muted);
+}
+
 p {
-    font-size: 1.2em;
-    font-weight: 300;
-    line-height: 1.5;
-    max-width: 40em;
+  margin: 0;
 }
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+li + li {
+  margin-top: 0.25rem;
+}
+
+/* 連結：平常是細底線，hover 時螢光筆由左往右劃過 */
 a {
-    text-decoration: none;
-    white-space: nowrap;
-    color: black;
-    position: relative;
+  color: inherit;
+  text-decoration: none;
+  padding: 0 0.15em;
+  margin: 0 -0.15em;
+  background-image:
+    linear-gradient(var(--marker), var(--marker)),
+    linear-gradient(var(--muted), var(--muted));
+  background-repeat: no-repeat;
+  background-position: 0 100%, 0.15em 100%;
+  background-size: 0% 100%, calc(100% - 0.3em) 1px;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+  transition: background-size 350ms cubic-bezier(0.2, 0.8, 0.2, 1);
 }
-a:after {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    top: 66%;
-    left: -0.1em;
-    right: -0.1em;
-    bottom: 0;
-    transition: top 200ms cubic-bezier(0, 0.8, 0.13, 1);
-    background-color: #5dade2;
+
+a:focus-visible {
+  outline: none;
+  background-size: 100% 100%, calc(100% - 0.3em) 1px;
 }
-a:hover:after {
-    top: 10%;
+
+@media (hover: hover) {
+  a:hover {
+    background-size: 100% 100%, calc(100% - 0.3em) 1px;
+  }
+
+  header img:hover {
+    transform: rotate(-8deg) scale(1.1);
+    box-shadow: 0 8px 18px rgba(70, 50, 20, 0.28);
+  }
+}
+
+::selection {
+  background: var(--marker);
+  color: var(--ink);
+}
+
+.label {
+  color: var(--muted);
+  margin-right: 0.75rem;
+}
+
+footer {
+  margin-top: 5rem;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  a,
+  header img {
+    transition: none;
+  }
 }
 </style>
+</head>
+<body>
+<main>
+  <header>
+    <img src="./assets/jemmy.jpg" alt="Jemmy Chen">
+    <h1>Jemmy Chen</h1>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <p>I am a Firmware Engineer at MediaTek with one year of industry experience, specializing in Linux and
+    Zephyr driver development and embedded system development. My current work focuses on
+    developing and testing firmware drivers, verifying FPGA and physical chip functionality, and assisting
+    with chip bring-up activities. I also have experience applying AI technologies to software development,
+    including developing a RAG system and MCP based on an internal kernel driver. With a background in
+    Computer Science and experience in both software engineering and system-level development, I am
+    interested in building efficient and reliable software systems and applying emerging technologies to
+    solve practical problems. You can view my
+    <a href="https://jemmy9211.github.io/" target="_blank" rel="noopener">Website</a> here.</p>
+  </section>
+
+  <section>
+    <h2>Portfolio</h2>
+    <ul>
+      <li><a href="https://jemmy9211.github.io/TWeather/" target="_blank" rel="noopener">TWeather</a></li>
+      <li><a href="https://github.com/jemmy9211/gitbro" target="_blank" rel="noopener">gitbro</a></li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <ul>
+      <li><span class="label">Email</span><a href="mailto:jemmy9211@gmail.com">jemmy9211@gmail.com</a></li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Jemmy All Rights Reserved</p>
+  </footer>
+</main>
+</body>
+</html>
